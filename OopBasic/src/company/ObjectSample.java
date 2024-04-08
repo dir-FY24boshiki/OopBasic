@@ -1,16 +1,16 @@
 package company;
 
-public class ObjectSamlpe {
+public class ObjectSample {
 
     public static void main(String[] args) {
         // インスタンスの作成
-        Department department = new Department("営業部", "xx", 1000000);
-        Employee employee = new Employee("鈴木", department, "課長", 100);
+        var department = new Department("営業部", "xx", 1000000);
+        var employee = new Employee("鈴木", department, "課長", 100);
 
         // インスタンスメソッドの呼び出し
         employee.report();
         employee.report(2);
-        ((Object) employee).joinMeeting();
+        employee.joinMeeting();
 
         // 1行空ける
         System.out.println("");
